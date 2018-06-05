@@ -140,7 +140,7 @@ class AppController extends Controller {
         return $this->redirect($this->Auth->logout());
     }
 
-    function getDataByAjaxPaging($modelName = null, $condtions = [], $requestData = [], $order = [], $data_column = [], $containArr = null, $condtionsDefault = [], $groupbyArr = []) {
+    function AjaxPaging($modelName = null, $condtions = [], $requestData = [], $order = [], $data_column = [], $containArr = null, $condtionsDefault = [], $groupbyArr = []) {
         $page_data = [
             "draw" => 1,
             "recordsTotal" => 0,

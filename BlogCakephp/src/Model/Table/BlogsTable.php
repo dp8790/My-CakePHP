@@ -33,7 +33,7 @@ class BlogsTable extends Table {
             //$optionsUpload = array('org' => true, "thumbs" => array("width" => 100, "height" => 100), 'cropImageOption' => $cropImageOption);
 
             $optionsUpload = array('org' => true, "thumbs" => array("width" => 270, "height" => 180));
-            $fileUploaded = fileUpload($data['photo'], $data['id'] . "_blog", BLOG_IMG_DIR, $allowedExts, $optionsUpload);
+            $fileUploaded = MyfileUpload($data['photo'], $data['id'] . "_blog", BLOG_IMG_DIR, $allowedExts, $optionsUpload);
             if (isset($fileUploaded['success']) && fnIsNotNull($fileUploaded['success'])) {
                 $upData = $fileUploaded['success'][0]['filename'];
             }

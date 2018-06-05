@@ -75,11 +75,11 @@ Router::scope('/', function ($routes) {
      */
     $routes->fallbacks('InflectedRoute');
 });
-Router::prefix('admin', function($routes) {
-    $routes->connect('/', ['controller' => 'Users', 'action' => 'login']);
-    $routes->connect('/dashboard/*', ['controller' => 'Users', 'action' => 'dashboard']);
-    $routes->fallbacks('InflectedRoute');
-});
+// Router::prefix('admin', function($routes) {
+    // $routes->connect('/', ['controller' => 'Users', 'action' => 'login']);
+    // $routes->connect('/dashboard/*', ['controller' => 'Users', 'action' => 'dashboard']);
+    // $routes->fallbacks('InflectedRoute');
+// });
 /**
  * Load all plugin routes.  See the Plugin documentation on
  * how to customize the loading of plugin routes.

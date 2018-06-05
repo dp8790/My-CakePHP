@@ -81,7 +81,7 @@ class BlogsController extends AppController {
             $conditions['Blogs.title LIKE'] = '%' . $search_val . '%';
         }
         $containArr = [];
-        $page_data = $this->getDataByAjaxPaging($modelName, $conditions, $requestData, $order, $data_column, $containArr, $condtionsDefault);
+        $page_data = $this->getDataPaging($modelName, $conditions, $requestData, $order, $data_column, $containArr, $condtionsDefault);
         $this->set('page_data', $page_data);
     }
 
