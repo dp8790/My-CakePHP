@@ -1,0 +1,34 @@
+
+label.error:after {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: transparent transparent #589bc9;
+	border-image: none;
+	border-style: solid;
+	border-width: 5px;
+	bottom: 100%;
+	content: " ";
+	height: 0;
+	left: 30px;
+	margin-left: -5px;
+	pointer-events: none;
+	position: absolute;
+	width: 0;
+}
+
+label.error {
+	line-height: 20px;
+	background: none repeat scroll 0 0 #589bc9 !important;
+	border-radius: 4px !important;
+	color: #fff !important;
+	display: inline-block;
+	font-size: 14px !important;
+	font-weight: normal !important;
+	margin-bottom: -8px !important;
+	margin-top: -2px !important;
+	padding: 5px 8px !important;
+	position: relative !important;
+}
+
