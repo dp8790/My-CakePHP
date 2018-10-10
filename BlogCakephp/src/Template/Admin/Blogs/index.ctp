@@ -10,7 +10,7 @@ if (isCallByAjax()) {
         $temp[] = $Photo;
         $temp[] = $d['title'];
         $temp[] = truncate_html($d['description'], $length = 100, $ending = '...', true);
-        $dd = $this->Html->link('<i class="fa fa-pencil"></i>', ['controller' => 'Blogs', 'action' => 'add_edit', $d['id'], '_full' => true], ['escape' => false]);
+        $dd = $this->Html->link('<i class="fa fa-pencil"></i>', ['controller' => 'Blogs', 'action' => 'add_edit', $d['id'],Cake\Utility\Inflector::slug($d['title']), '_full' => true], ['escape' => false]);
         $dd .= ' / ';
         $dd .= $this->Form->postLink('', array('controller' => 'Blogs', 'action' => 'delete', $d['id']), array('escape' => false, 'confirm' => 'Are you sure?', 'class' => 'fa fa-trash-o'));
         $checked = "";
